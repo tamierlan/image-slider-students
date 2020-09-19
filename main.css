@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 :root {
   --mainWhite: #f2fdff;
   --mainBlue: #3e92cc;
@@ -6,23 +9,20 @@
   min-height: 100vh;
 }
 body {
+  margin: 0;
   background: var(--mainWhite);
-  padding: 0 15px;
+  font-family: 'Russo One', sans-serif;
 }
 .container {
   text-align: center;
 }
 .img-container {
   min-height: 60vh;
-  background: url('./img/contBcg-0.jpeg') center/cover no-repeat;
-  border: 0.1rem solid var(--mainBlue);
-  border-bottom: 1rem solid var(--mainBlue);
-  border-radius: 1rem;
   position: relative;
 }
 @media screen and (min-width: 768px) {
   .img-container {
-    min-height: 80vh;
+    min-height: 60vh;
   }
 }
 .btn-left {
@@ -57,17 +57,17 @@ body {
   cursor: pointer;
 }
 .car-name {
-  margin: 2px;
-  text-shadow: 0px 0px 10px var(--mainBlue);
+  margin: 0px;
+  text-shadow: 0px 0px 15px var(--mainBlue);
 }
 
 .carousel {
+  width: 100%;
   margin-top: 10px;
 }
 .carousel img {
-  width: 200px;
+  width: 20%;
+  opacity: 0.5;
   height: 120px;
-  margin: auto 20px;
-  border-radius: 5px;
-  border: 1px solid var(--mainBlue);
+   border: 1px solid var(--mainBlue);
 }
